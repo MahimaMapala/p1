@@ -33,6 +33,8 @@ namespace fnbll
             return false;
         }
 
+
+
         public bool isexist(string a, string b)
         {
             string query2 = "isexist";
@@ -53,6 +55,8 @@ namespace fnbll
 
         }
 
+
+
         public bool eexists(string a)
         {
             string query2 = "eexists";
@@ -70,6 +74,8 @@ namespace fnbll
             return false;
 
         }
+
+
 
         public bool isadmin(string a, string b)
         {
@@ -96,6 +102,8 @@ namespace fnbll
             return false;
         }
 
+
+
         public int regasadmin(string a, string b)
         {
             int aa = 0;
@@ -116,6 +124,8 @@ namespace fnbll
                 d.closeconn();
             return aa;
         }
+
+
 
         public int addemplyee(string eid, string password, string did, string cid, string ename, string mobile, string dob, string joins, string salary, string state, string city, string reportingto, string designation)
         {
@@ -162,6 +172,8 @@ namespace fnbll
         }
 
 
+
+
         public int regcomp(string cid, string gstn, string cname, string dirname, string mail, string state,string pincode, string mobile)
         {
 
@@ -195,6 +207,8 @@ namespace fnbll
             return aa;
         }
 
+
+
         public bool cexists(string a)
         {
             string query2 = "cexists";
@@ -212,6 +226,8 @@ namespace fnbll
             return false;
 
         }
+
+
 
         public bool didcidval(string a, string b)
         {

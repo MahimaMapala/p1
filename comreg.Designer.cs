@@ -32,12 +32,12 @@ namespace p1
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(comreg));
             this.logout = new System.Windows.Forms.Button();
-            this.mobile = new p1.roundtextbox();
-            this.email = new p1.roundtextbox();
-            this.state = new p1.roundtextbox();
-            this.dname = new p1.roundtextbox();
-            this.cname = new p1.roundtextbox();
-            this.cid = new p1.roundtextbox();
+            this.mobile = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
+            this.state = new System.Windows.Forms.TextBox();
+            this.dname = new System.Windows.Forms.TextBox();
+            this.cname = new System.Windows.Forms.TextBox();
+            this.cid = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@ namespace p1
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gstno = new p1.roundtextbox();
+            this.gstno = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -67,7 +67,7 @@ namespace p1
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pincode = new p1.roundtextbox();
+            this.pincode = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.loaderpic = new System.Windows.Forms.Label();
@@ -504,7 +504,7 @@ namespace p1
             this.loaderpic.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loaderpic.Location = new System.Drawing.Point(390, 277);
             this.loaderpic.Name = "loaderpic";
-            this.loaderpic.Size = new System.Drawing.Size(174, 43);
+            this.loaderpic.Size = new System.Drawing.Size(171, 41);
             this.loaderpic.TabIndex = 134;
             this.loaderpic.Text = "Please wait.......";
             // 
@@ -564,12 +564,12 @@ namespace p1
         #endregion
 
         private System.Windows.Forms.Button logout;
-        private roundtextbox mobile;
-        private roundtextbox email;
-        private roundtextbox state;
-        private roundtextbox dname;
-        private roundtextbox cname;
-        private roundtextbox cid;
+        private System.Windows.Forms.TextBox mobile;
+        private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.TextBox state;
+        private System.Windows.Forms.TextBox dname;
+        private System.Windows.Forms.TextBox cname;
+        private System.Windows.Forms.TextBox cid;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
@@ -589,7 +589,7 @@ namespace p1
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private roundtextbox gstno;
+        private System.Windows.Forms.TextBox gstno;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox3;
@@ -599,7 +599,7 @@ namespace p1
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private roundtextbox pincode;
+        private System.Windows.Forms.TextBox pincode;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label loaderpic;

@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
-using MySql.Data.MySqlClient;
-using MySql.Data.MySqlClient.Memcached;
 using System.Security.Authentication;
 using fnbll;
 using dbdll;

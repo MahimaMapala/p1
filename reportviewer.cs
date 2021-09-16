@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
-using MySql.Data.MySqlClient;
-using MySql.Data.MySqlClient.Memcached;
 using System.Security.Authentication;
 using fnbll;
 using dbdll;
@@ -18,7 +16,7 @@ using System.Transactions;
 
 namespace p1
 {
-    public partial class reportviewerc : Form
+    public partial class reportviewerc :                                    Form
     {
         dbdll.db d=new dbdll.db();
             public reportviewerc()

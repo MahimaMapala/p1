@@ -43,8 +43,8 @@ namespace p1
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.userid = new p1.roundtextbox();
-            this.password = new p1.roundtextbox();
+            this.userid = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
@@ -270,8 +270,8 @@ namespace p1
         private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private roundtextbox userid;
-        private roundtextbox password;
+        private System.Windows.Forms.TextBox userid;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;

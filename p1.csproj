@@ -54,9 +54,11 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="dbdll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\dbdll.dll</HintPath>
+    <Reference Include="dbdll">
+      <HintPath>dbdll\dbdll.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Projections, Version=1.9.0.0, Culture=neutral, PublicKeyToken=272632bddd08a38b, processorArchitecture=MSIL">
+      <HintPath>packages\DotSpatial.Projections.1.9\lib\net40-Client\DotSpatial.Projections.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -64,9 +66,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="fnbll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\fnbll.dll</HintPath>
+    <Reference Include="fnbll">
+      <HintPath>fnbll\fnbll.dll</HintPath>
     </Reference>
     <Reference Include="gio-sharp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
       <HintPath>packages\GstSharp.1.18.0\lib\net45\gio-sharp.dll</HintPath>
@@ -102,9 +103,8 @@
       <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>packages\KTC-SqlServerTypes.1.0.0\lib\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -116,8 +116,11 @@
     <Reference Include="ReportPortal.Client, Version=3.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\ReportPortal.Client.3.0.5\lib\net45\ReportPortal.Client.dll</HintPath>
     </Reference>
+    <Reference Include="SqlServerSpatial.Toolkit, Version=1.0.2.39392, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SqlServerSpatial.Toolkit.1.0.3\lib\net45\SqlServerSpatial.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -194,6 +197,12 @@
     <Compile Include="comreg.Designer.cs">
       <DependentUpon>comreg.cs</DependentUpon>
     </Compile>
+    <Compile Include="connect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connect.Designer.cs">
+      <DependentUpon>connect.cs</DependentUpon>
+    </Compile>
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,11 +228,11 @@
     <Compile Include="datetime.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -252,11 +261,11 @@
     <EmbeddedResource Include="comreg.resx">
       <DependentUpon>comreg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="connect.resx">
+      <DependentUpon>connect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -339,7 +348,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ssg.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\Spinner-3.gif" />
+    <Content Include="packages\SqlServerSpatial.Toolkit.1.0.3\toolkit\SqlServerSpatial.Toolkit.DebuggerVisualizer.VS2013.dll" />
+    <Content Include="packages\SqlServerSpatial.Toolkit.1.0.3\toolkit\SqlServerSpatial.Toolkit.DebuggerVisualizer.VS2015.dll" />
+    <Content Include="packages\SqlServerSpatial.Toolkit.1.0.3\toolkit\SqlServerSpatial.Toolkit.DebuggerVisualizer.VS2017.dll" />
+    <Content Include="packages\SqlServerSpatial.Toolkit.1.0.3\toolkit\SqlServerSpatial.Toolkit.Viewer.exe" />
+    <Content Include="SqlServerSpatial.Toolkit\readme.htm" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -353,6 +366,7 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Spinner-3.gif" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
